@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find your dream home with RealEstateCo. Browse our featured properties and contact us for more information.">
+    <title>Real Estate Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+          <!---------- Header Section ---------->
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="#">RealEstateCo</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#property">Properties</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="signin-mobile"><a href="#signin" class="signin-button">Sign In</a></li>
+                </ul>
+                <div class="signin">
+                    <a href="#signin" class="signin-button">Sign In</a>
+                </div>
+                <div class="hamburger">
+                    <i class="fas fa-bars open-icon"></i>
+                    <i class="fas fa-times close-icon"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+              <!---------- Hero Section ---------->
+    <section class="hero" id="hero">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('assets/hero-bg.avif');">
+                    <div class="carousel-content">
+                        <h1>Your Dream Home Awaits</h1>
+                        <p>Discover the perfect property for you.</p>
+                            <a href="#property"  class="btn">Explore Properties</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('assets/hero2.jpg');">
+                    <div class="carousel-content">
+                        <h1>Your Dream Home Awaits</h1>
+                        <p>Discover the perfect property for you.</p>
+                            <a href="#property"  class="btn">Explore Properties</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('assets/hero3.jpg');">
+                    <div class="carousel-content">
+                        <h1>Your Dream Home Awaits</h1>
+                        <p>Discover the perfect property for you.</p>
+                            <a href="#property" class="btn">Explore Properties</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+              <!---------- Hero Form Section ---------->
+    <section class="hero-form-wrapper">
+        <div class="hero-form-tabs">
+            <button class="tab-btn active" data-tab="buy">Buy</button>
+            <button class="tab-btn" data-tab="sell">Sell</button>
+            <button class="tab-btn" data-tab="rent">Rent</button>
+        </div>
+
+        <form action="" class="hero-form">
+            <div class="input-wrapper">
+                <label for="search" class="input-label">Search: *</label>
+                <div class="search-wrapper">
+                    <input type="search" name="search" id="search" placeholder="Search your home" required class="input-field">
+                    <i class="fas fa-search search-icon"></i> <!-- Font Awesome search icon -->
+                </div>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="category" class="input-label">Select Categories</label>
+                <select name="category" id="category" class="dropdown-list">
+                    <option value="house">House</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="offices">Offices</option>
+                    <option value="townhome">Townhome</option>
+                </select>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="min-price" class="input-label">Min Price :</label>
+                <select name="min-price" id="min-price" class="dropdown-list">
+                    <option value="min price">Min Price</option>
+                    <option value="80000">80,000</option>
+                    <option value="90000">90,000</option>
+                    <option value="100000">100,000</option>
+                    <option value="110000">110,000</option>
+                    <option value="120000">120,000</option>
+                    <option value="130000">130,000</option>
+                    <option value="140000">140,000</option>
+                    <option value="150000">150,000</option>
+                    <option value="160000">160,000</option>
+                </select>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="max-price" class="input-label">Max Price :</label>
+                <select name="max-price" id="max-price" class="dropdown-list">
+                    <option value="max price">Max Price</option>
+                    <option value="300000">300,000</option>
+                    <option value="350000">350,000</option>
+                    <option value="400000">400,000</option>
+                    <option value="450000">450,000</option>
+                    <option value="500000">500,000</option>
+                    <option value="550000">550,000</option>
+                    <option value="600000">600,000</option>
+                    <option value="650000">650,000</option>
+                </select>
+            </div>
+        </form>
+    </section>
+
+        <!---------- Service Section ---------->
+<section class="section service" id="service" aria-label="service">
+    <div class="container">
+        <h2 class="h2 section-title">Our Services</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <i class="fas fa-home service-icon"></i>
+                <h3 class="service-title">Property Buying</h3>
+                <p class="service-description">Find your dream home with our expert assistance. We'll guide you through every step of the buying process.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-chart-line service-icon"></i>
+                <h3 class="service-title">Property Selling</h3>
+                <p class="service-description">Sell your property quickly and at the best price with our effective marketing strategies and professional support.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-handshake service-icon"></i>
+                <h3 class="service-title">Property Renting</h3>
+                <p class="service-description">Rent a property hassle-free. We have a wide range of rental options to suit your needs and preferences.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+                 
+
+                    <!---------- Featured Properties ---------->
+      <section class="section property" id="property" aria-label="property">
+        <div class="container">
+            <h2 class="h2 section-title">Featured Properties</h2>
+            <p class="section-text">
+                A great platform to buy, sell and rent properties without any agent or commisions.
+            </p>
+            <ul class="property-list">
+                <li>
+                    <div class="property-card">
+                        <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                            <img src="assets/room-1.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                        </figure>
+                        <button class="card-action-btn" aria-label="add to favourite">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <div class="card-content">
+                            <h3 class="h3">
+                                <a href="#" class="card-title">75 Lagos Street, Ikeja, Nigeria</a>
+                            </h3>
+                            <ul class="card-list">
+                                <li class="card-item">
+                                    <div class="item-icon">
+                                        <i class="fas fa-cube"></i>
+                                    </div>
+    
+                                    <span class="item-text">7500sqf</span>
+                                </li>
+    
+                                <li class="card-item">
+                                    <div class="item-icon">
+                                        <i class="fas fa-bed"></i>
+                                    </div>
+                                    <span class="item-text">3 Beds</span>
+                                </li>
+    
+                                <li class="card-item">
+                                    <div class="item-icon">
+                                        <i class="fas fa-bath"></i>
+                                    </div>
+                                    <span class="item-text">2 Baths</span>
+                                </li>
+                            </ul>
+    
+                            <div class="card-meta">
+                                <div>
+                                    <span class="meta-title">Price</span>
+                                    <span class="meta-text">₦150,000</span>
+                                </div>
+    
+                                <div>
+                                    <span class="meta-title">Rating</span>
+                                    <span class="meta-text">
+                                        <div class="rating-wrapper">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span>5.0(24)</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="property-card">
+                        <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                            <img src="assets/room-2.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                        </figure>
+                        <button class="card-action-btn" aria-label="add to favourite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="card-content">
+                            <h3 class="h3">
+                                <a href="#" class="card-title">25 Adeola Odeku Street, Victoria Island, Lagos, Nigeria</a>
+                            </h3>
+                            <ul class="card-list">
+                                <li class="card-item">
+                                    <div class="item-icon">
+                                        <i class="fas fa-cube"></i>
+                                    </div>
+                                    <span class="item-text">8000sqf</span>
+                                </li>
+                                <li class="card-item">
+                                    <div class="item-icon">
+                                        <i class="fas fa-bed"></i>
+                                    </div>
+                                    <span class="item-text">1 Beds</span>
+                                </li>
+                                <li class="card-item">
+                                    <div class="item-icon">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <span class="item-text">2 Baths</span>
+                                </li>
+                            </ul>
+                            <div class="card-meta">
+                                <div>
+                                    <span class="meta-title">Price</span>
+                                    <span class="meta-text">₦80,000</span>
+                                </div>
+                                <div>
+                                    <span class="meta-title">Rating</span>
+                                    <span class="meta-text">
+                                        <div class="rating-wrapper">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span>5.0(24)</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="property-card">
+                        <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                            <img src="assets/room-3.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                        </figure>
+                        <button class="card-action-btn" aria-label="add to favourite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="card-content">
+                            <h3 class="h3">
+                                <a href="#" class="card-title">10 Adeyemo Alakija Street, Victoria Island, Lagos, Nigeria</a>
+                            </h3>
+                            <ul class="card-list">
+                                <li class="card-item">
+                                    <div class="item-icon">
+                                        <i class="fas fa-cube"></i>
+                                    </div>
+                                    <span class="item-text">8000sqf</span>
+                                </li>
+                                <li class="card-item">
+                                    <div class="item-icon">
+                                        <i class="fas fa-bed"></i>
+                                    </div>
+                                    <span class="item-text">3 Beds</span>
+                                </li>
+                                <li class="card-item">
+                                    <div class="item-icon">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <span class="item-text">3 Baths</span>
+                                </li>
+                            </ul>
+                            <div class="card-meta">
+                                <div>
+                                    <span class="meta-title">Price</span>
+                                    <span class="meta-text">₦300,000</span>
+                                </div>
+                                <div>
+                                    <span class="meta-title">Rating</span>
+                                    <span class="meta-text">
+                                        <div class="rating-wrapper">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span>5.0(24)</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="property-card">
+                        <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                            <img src="assets/room-4.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                        </figure>
+                        <button class="card-action-btn" aria-label="add to favourite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="card-content">
+                            <h3 class="h3">
+                                <a href="#" class="card-title">17 Admiralty Way, Lekki Phase 1, Lagos, Nigeria</a>
+                            </h3>
+                            <ul class="card-list">
+                                <li class="card-item">
+                                    <div class="item-icon">
+                                        <i class="fas fa-cube"></i>
+                                    </div>
+                                    <span class="item-text">7500sqf</span>
+                                </li>
+                                <li class="card-item">
+                                    <div class="item-icon">
+                                        <i class="fas fa-bed"></i>
+                                    </div>
+                                    <span class="item-text">3 Beds</span>
+                                </li>
+                                <li class="card-item">
+                                    <div class="item-icon">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <span class="item-text">2 Baths</span>
+                                </li>
+                            </ul>
+                            <div class="card-meta">
+                                <div>
+                                    <span class="meta-title">Price</span>
+                                    <span class="meta-text">₦350,000</span>
+                                </div>
+                                <div>
+                                    <span class="meta-title">Rating</span>
+                                    <span class="meta-text">
+                                        <div class="rating-wrapper">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span>5.0(24)</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="property-card">
+                        <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                            <img src="assets/room-5.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                        </figure>
+                        <button class="card-action-btn" aria-label="add to favourite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="card-content">
+                            <h3 class="h3">
+                                <a href="#" class="card-title">20 Opebi Road, Ikeja, Lagos, Nigeria</a>
+                            </h3>
+                            <ul class="card-list">
+                                <li class="card-item">
+                                    <div class="item-icon">
+                                        <i class="fas fa-cube"></i>
+                                    </div>
+                                    <span class="item-text">8000sqf</span>
+                                </li>
+                                <li class="card-item">
+                                    <div class="item-icon">
+                                        <i class="fas fa-bed"></i>
+                                    </div>
+                                    <span class="item-text">4 Beds</span>
+                                </li>
+                                <li class="card-item">
+                                    <div class="item-icon">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <span class="item-text">3 Baths</span>
+                                </li>
+                            </ul>
+                            <div class="card-meta">
+                                <div>
+                                    <span class="meta-title">Price</span>
+                                    <span class="meta-text">₦700,000</span>
+                                </div>
+                                <div>
+                                    <span class="meta-title">Rating</span>
+                                    <span class="meta-text">
+                                        <div class="rating-wrapper">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span>5.0(24)</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                   
+                <li>
+                    <div class="property-card">
+                        <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                            <img src="assets/room-6.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                        </figure>
+                        <button class="card-action-btn" aria-label="add to favourite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="card-content">
+                            <h3 class="h3">
+                                <a href="#" class="card-title">8 Karimu Kotun Street, Victoria Island, Lagos, Nigeria</a>
+                            </h3>
+                            <ul class="card-list">
+                                <li class="card-item">
+                                    <div class="item-icon">
+                                        <i class="fas fa-cube"></i>
+                                    </div>
+                                    <span class="item-text">7500sqf</span>
+                                </li>
+                                <li class="card-item">
+                                    <div class="item-icon">
+                                        <i class="fas fa-bed"></i>
+                                    </div>
+                                    <span class="item-text">3 Beds</span>
+                                </li>
+                                <li class="card-item">
+                                    <div class="item-icon">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <span class="item-text">3 Baths</span>
+                                </li>
+                            </ul>
+                            <div class="card-meta">
+                                <div>
+                                    <span class="meta-title">Price</span>
+                                    <span class="meta-text">₦400,000</span>
+                                </div>
+                                <div>
+                                    <span class="meta-title">Rating</span>
+                                    <span class="meta-text">
+                                        <div class="rating-wrapper">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span>5.0(24)</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+             <!---------- About Section ---------->
+<section class="section about" id="about" aria-label="about">
+    <div class="container">
+        <h2 class="h2 section-title">About Us</h2>
+        <p class="section-text">
+            Welcome to RealEstateCo, your trusted partner in finding the perfect property. We are committed to providing you with the best real estate solutions, whether you are looking to buy, sell, or rent a property. Our extensive portfolio features a diverse range of properties to suit all your needs.
+        </p>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Our Mission</h3>
+                <p>
+                    At RealEstateCo, our mission is to simplify the real estate process for our clients. We aim to provide a seamless and transparent experience by offering expert guidance and a comprehensive selection of properties.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="assets/hero3.jpg" alt="About Us" class="img-cover">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+                  <!---------- Our Team Section ---------->
+                  <section class="section team" id="team" aria-label="team">
+                    <div class="container">
+                        <h2 class="h2 section-title">Our Team</h2>
+                        <p class="section-text">
+                            Meet the dedicated professionals who are committed to helping you achieve your real estate goals. Our team brings a wealth of experience and a passion for excellence.
+                        </p>
+                        <div class="team-grid">
+                            <div class="team-member">
+                                <img src="assets/team-member1.jpg" alt="Team Member 1" class="team-img">
+                                <h3 class="team-name">Alex Johnson</h3>
+                                <p class="team-role">CEO & Founder</p>
+                                <p class="team-bio">Alex has over 20 years of experience in the real estate industry and is dedicated to providing exceptional service to all clients.</p>
+                            </div>
+                            <div class="team-member">
+                                <img src="assets/team-member2.jpg" alt="Team Member 2" class="team-img">
+                                <h3 class="team-name">Jamie Smith</h3>
+                                <p class="team-role">Head of Sales</p>
+                                <p class="team-bio">Jamie is a seasoned professional with a deep understanding of the market, helping clients find their perfect homes.</p>
+                            </div>
+                            <div class="team-member">
+                                <img src="assets/team-member3.avif" alt="Team Member 3" class="team-img">
+                                <h3 class="team-name">Taylor Brown</h3>
+                                <p class="team-role">Marketing Director</p>
+                                <p class="team-bio">With a knack for creative strategies, Taylor ensures that our properties reach the right audience effectively.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+
+                     <!---------- Testimonial Section ---------->
+                     <section class="section wrapper wrapper2 top">
+                        <div class="container">
+                            <div class="text">
+                                <div class="heading">
+                                    <h2>What Our Clients Say</h2>
+                                </div>
+                    
+                                <div class="para">
+                                    <p>"I'm incredibly impressed with the level of professionalism and dedication exhibited by RealEstateCo. They helped me find the perfect home in no time. Highly recommended!"</p>
+                                    <div class="box flex">
+                                        <div class="img">
+                                            <img src="assets/testimonial1.avif" alt="Client Testimonial">
+                                        </div> <br>
+                                        <div class="name">
+                                            <h5>Chris Johnson</h5>
+                                            <h5>Lagos, Nigeria</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+ 
+                             <!---------- Newsletter Section ---------->
+                             <section class="section newsletter" id="newsletter" aria-label="newsletter">
+                                <div class="container">
+                                    <h2 class="h2 section-title">Subscribe to Our Newsletter</h2>
+                                    <p class="section-text">Stay updated with the latest news, trends, and property listings.</p>
+                                    <form action="#" class="newsletter-form">
+                                        <div class="form-group">
+                                            <label for="email" class="sr-only">Email Address</label>
+                                            <input type="email" id="email" name="email" placeholder="Enter your email address" required class="form-control">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                                    </form>
+                                </div>
+                            </section>
+
+                       <!---------- Contact Section ---------->
+                       <section class="section contact" id="contact" aria-label="contact">
+                        <div class="container">
+                            <h2 class="h2 section-title">Contact Us</h2>
+                            <p class="section-text">Get in touch with us for any inquiries or assistance.</p>
+                            <div class="contact-form">
+                                <form action="#" method="POST">
+                                    <div class="form-group">
+                                        <label for="name" class="sr-only">Your Name</label>
+                                        <input type="text" id="name" name="name" placeholder="Your Name" required class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="sr-only">Email Address</label>
+                                        <input type="email" id="email" name="email" placeholder="Your Email Address" required class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message" class="sr-only">Message</label>
+                                        <textarea name="message" id="message" rows="5" placeholder="Your Message" required class="form-control"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+
+
+                            <!---------- Footer Section ---------->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="#">RealEstateCo</a>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-info">
+            <p>&copy; 2024 RealEstateCo. All rights reserved.</p> <br>
+            <p>Created by <a href="https://github.com/Sheisgoodness" target="_blank">Sheisgoodness</a></p>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+
+</body>
+</html>
